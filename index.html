@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghana Fisheries: Sustaining Livelihoods</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#species">Species</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="home" class="hero">
+            <h1>Ghana Fisheries: Sustaining Livelihoods</h1>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Ghana's Fisheries</h2>
+            <p>Ghana's fishing industry is a cornerstone of the nation's economy, contributing approximately 1.5% to the GDP and providing livelihoods for over 2.4 million people. It plays a crucial role in food security, supplying a significant portion of the population's protein needs. The sector encompasses marine fishing, inland fisheries, and aquaculture, with marine fishing being the most prominent.</p>
+            <img src="https://cdn.pixabay.com/photo/2015/03/16/14/07/ghana-673065_1280.jpg" alt="Ghanaian fisherman on the water">
+            <p>Fishing methods in Ghana primarily involve artisanal techniques such as using canoes, gill nets, purse seines, and handlines. However, illegal practices like dynamite fishing, poison use, and small mesh nets pose threats to sustainability.</p>
+            <p>The economic impact is substantial, generating over US$500 million annually through exports and local trade. Despite this, the industry faces a growing trade deficit due to increasing imports and declining local stocks.</p>
+            <div id="challenges">
+                <h2>Challenges</h2>
+                <p>The Ghanaian fisheries sector grapples with several challenges, including overfishing, illegal, unreported, and unregulated (IUU) fishing, climate change impacts like warming waters and habitat destruction, and pollution from plastics. These issues threaten resource sustainability and the livelihoods of coastal communities. Efforts such as closed fishing seasons and management projects aim to address these for a more sustainable future.</p>
+            </div>
+        </section>
+        <section id="species">
+            <h2>Key Fish Species</h2>
+            <div class="species-cards">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2017/07/28/16/50/sardines-2548877_1280.jpg" alt="Sardinella fish" onclick="openModal(this.src, this.alt)">
+                    <h3>Sardinella</h3>
+                    <p>A small pelagic fish abundant in Ghana's coastal waters, sardinella is a staple in local diets and often consumed fresh, smoked, or dried.</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/07/22/10/mackerels-2605471_1280.jpg" alt="Mackerel fish" onclick="openModal(this.src, this.alt)">
+                    <h3>Mackerel</h3>
+                    <p>An oily fish rich in omega-3 fatty acids, mackerel is caught in large quantities and is important for both domestic consumption and export.</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2018/05/29/00/06/anchovies-3438419_1280.jpg" alt="Anchovy fish" onclick="openModal(this.src, this.alt)">
+                    <h3>Anchovy</h3>
+                    <p>Small schooling fish used in sauces, dried products, and as bait; they form a key part of the marine ecosystem in Ghana.</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2016/06/16/12/34/tuna-1461063_1280.jpg" alt="Tuna fish" onclick="openModal(this.src, this.alt)">
+                    <h3>Tuna</h3>
+                    <p>Larger pelagic species targeted for export, tuna contributes significantly to Ghana's foreign exchange earnings.</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/07/22/10/tilapia-2605470_1280.jpg" alt="Tilapia fish" onclick="openModal(this.src, this.alt)">
+                    <h3>Tilapia</h3>
+                    <p>A popular freshwater fish extensively farmed in Ghana, tilapia is valued for its mild flavor and role in aquaculture.</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="slider">
+                <img id="slider-image" src="https://cdn.pixabay.com/photo/2015/02/13/13/55/africa-634231_1280.jpg" alt="Ghanaian fishermen at work">
+                <button onclick="prevSlide()">Previous</button>
+                <button onclick="nextSlide()">Next</button>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For more information, reach out via email at info@ghanafisheries.com or phone at +233-246-038248.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Contact: info@ghanafisheries.com | &copy; 2025 Ghana Fisheries</p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-image" class="modal-content" alt="Enlarged fish image">
+        <div id="caption"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
